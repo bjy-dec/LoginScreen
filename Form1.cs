@@ -7,6 +7,13 @@ namespace LoginScreen
             InitializeComponent();
         }
 
+        private void btnClearID_Click(object sender, EventArgs e)
+        {
+            txtID.Text = "";
+            txtID.ForeColor = Color.Black;
+            txtID.Focus();
+        }
+
         private void txtID_Enter(object sender, EventArgs e)
         {
             if (txtID.Text == "아이디")

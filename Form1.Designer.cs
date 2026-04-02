@@ -33,6 +33,7 @@
             txtPW = new TextBox();
             btnLogin = new Button();
             lblErrorMsg = new Label();
+            btnClearID = new Button();
             SuspendLayout();
             // 
             // lblAppName
@@ -95,6 +96,17 @@
             lblErrorMsg.Text = "아이디 또는 비밀번호가 잘못 되었습니다.";
             lblErrorMsg.Visible = false;
             // 
+            // btnClearID
+            // 
+            btnClearID.Font = new Font("맑은 고딕", 12F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            btnClearID.Location = new Point(540, 148);
+            btnClearID.Name = "btnClearID";
+            btnClearID.Size = new Size(24, 28);
+            btnClearID.TabIndex = 5;
+            btnClearID.Text = "X";
+            btnClearID.UseVisualStyleBackColor = true;
+            btnClearID.Click += btnClearID_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -103,6 +115,7 @@
             Controls.Add(lblErrorMsg);
             Controls.Add(btnLogin);
             Controls.Add(txtPW);
+            Controls.Add(btnClearID);
             Controls.Add(txtID);
             Controls.Add(lblAppName);
             Name = "Form1";
@@ -116,6 +129,7 @@
         private Label lblAppName;
         private TextBox txtID;
         private TextBox txtPW;
+        private Button btnClearID;
         private Button btnLogin;
         private Label lblErrorMsg;
     }
