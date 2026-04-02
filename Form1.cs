@@ -26,21 +26,6 @@ namespace LoginScreen
             }
         }
 
-        private void txtID_TextChanged(object sender, EventArgs e)
-        {
-            // Show clear button only when there is user input (not the placeholder)
-            if (btnClearID != null)
-            {
-                btnClearID.Visible = !string.IsNullOrEmpty(txtID.Text) && txtID.Text != "아이디";
-            }
-        }
-
-        private void btnClearID_Click(object sender, EventArgs e)
-        {
-            txtID.Text = "";
-            txtID.Focus();
-        }
-
         private void txtPW_Enter(object sender, EventArgs e)
         {
             if (txtPW.Text == "패스워드")
